@@ -1,0 +1,23 @@
+<head>
+  <title>resolutions</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Monthly Resolution</h1>
+			<form class="new-resolution">
+				<input type="text" name="title" placeholder="A new resolution">
+			</form>	
+		</header>
+		<ul>
+			{{#each resolutions}}
+				{{> resolution}}
+			{{/each}}	
+		</ul>
+	</div>	
+</body>
+
+<template name="resolution">
+	<li>{{title}}</li>
+</template>
